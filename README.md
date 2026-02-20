@@ -16,6 +16,20 @@ Then open the URL (e.g. http://localhost:3000 or http://localhost:8080).
 
 Opening `index.html` via `file://` may fail to load the country list due to browser security; use a local server for full behaviour.
 
+## Deploy to GitHub Pages
+
+This folder is its own git repo. To push to GitHub and go live:
+
+```bash
+cd wave-3/cash-loss-calculator
+git push -u origin main
+```
+
+Then in GitHub: **Settings → Pages** → Source: **Deploy from a branch** → Branch: **main** → Folder: **/ (root)** → Save.  
+Site will be at **https://silkindsgn.github.io/cash-loss-calculator/**.
+
+After that, submit `https://silkindsgn.github.io/cash-loss-calculator/sitemap.xml` in [Google Search Console](https://search.google.com/search-console).
+
 ## Data
 
 - **data/countries.json**: inflation (annual %) and average savings-account rate (annual %) per country. Sourced from national statistics, OECD, ECB MFI, World Bank (approx 2023–2024). See `_source` in the file.
