@@ -1,0 +1,30 @@
+{
+  "_source": "Inflation: national statistics / OECD / World Bank (approx 2023-2024). Savings rate: ECB MFI statistics, national central banks, OECD deposit rates (household deposits, approx 2023-2024).",
+  "countries": [
+    { "id": "US", "name": "United States", "currencyCode": "USD", "currencySymbol": "$", "inflationAnnual": 2.95, "savingsRateAnnual": 4.5 },
+    { "id": "CA", "name": "Canada", "currencyCode": "CAD", "currencySymbol": "C$", "inflationAnnual": 2.8, "savingsRateAnnual": 2.5 },
+    { "id": "GB", "name": "United Kingdom", "currencyCode": "GBP", "currencySymbol": "£", "inflationAnnual": 3.28, "savingsRateAnnual": 2.05 },
+    { "id": "DE", "name": "Germany", "currencyCode": "EUR", "currencySymbol": "€", "inflationAnnual": 2.26, "savingsRateAnnual": 1.2 },
+    { "id": "FR", "name": "France", "currencyCode": "EUR", "currencySymbol": "€", "inflationAnnual": 2.0, "savingsRateAnnual": 1.0 },
+    { "id": "IT", "name": "Italy", "currencyCode": "EUR", "currencySymbol": "€", "inflationAnnual": 0.98, "savingsRateAnnual": 2.0 },
+    { "id": "ES", "name": "Spain", "currencyCode": "EUR", "currencySymbol": "€", "inflationAnnual": 2.78, "savingsRateAnnual": 1.5 },
+    { "id": "NL", "name": "Netherlands", "currencyCode": "EUR", "currencySymbol": "€", "inflationAnnual": 2.2, "savingsRateAnnual": 1.0 },
+    { "id": "PL", "name": "Poland", "currencyCode": "PLN", "currencySymbol": "zł", "inflationAnnual": 4.2, "savingsRateAnnual": 1.0 },
+    { "id": "BE", "name": "Belgium", "currencyCode": "EUR", "currencySymbol": "€", "inflationAnnual": 2.4, "savingsRateAnnual": 0.8 },
+    { "id": "AT", "name": "Austria", "currencyCode": "EUR", "currencySymbol": "€", "inflationAnnual": 2.3, "savingsRateAnnual": 1.0 },
+    { "id": "AU", "name": "Australia", "currencyCode": "AUD", "currencySymbol": "A$", "inflationAnnual": 3.4, "savingsRateAnnual": 2.75 },
+    { "id": "JP", "name": "Japan", "currencyCode": "JPY", "currencySymbol": "¥", "inflationAnnual": 2.2, "savingsRateAnnual": 0.1 },
+    { "id": "CN", "name": "China", "currencyCode": "CNY", "currencySymbol": "¥", "inflationAnnual": 1.0, "savingsRateAnnual": 1.5 },
+    { "id": "IN", "name": "India", "currencyCode": "INR", "currencySymbol": "₹", "inflationAnnual": 4.8, "savingsRateAnnual": 3.5 },
+    { "id": "BR", "name": "Brazil", "currencyCode": "BRL", "currencySymbol": "R$", "inflationAnnual": 4.5, "savingsRateAnnual": 6.0 },
+    { "id": "MX", "name": "Mexico", "currencyCode": "MXN", "currencySymbol": "$", "inflationAnnual": 4.2, "savingsRateAnnual": 4.5 },
+    { "id": "CH", "name": "Switzerland", "currencyCode": "CHF", "currencySymbol": "CHF", "inflationAnnual": 1.0, "savingsRateAnnual": 0.3 },
+    { "id": "SE", "name": "Sweden", "currencyCode": "SEK", "currencySymbol": "kr", "inflationAnnual": 2.0, "savingsRateAnnual": 0.15 },
+    { "id": "NO", "name": "Norway", "currencyCode": "NOK", "currencySymbol": "kr", "inflationAnnual": 3.2, "savingsRateAnnual": 1.4 },
+    { "id": "PT", "name": "Portugal", "currencyCode": "EUR", "currencySymbol": "€", "inflationAnnual": 2.1, "savingsRateAnnual": 1.2 },
+    { "id": "CZ", "name": "Czech Republic", "currencyCode": "CZK", "currencySymbol": "Kč", "inflationAnnual": 2.0, "savingsRateAnnual": 2.5 },
+    { "id": "RO", "name": "Romania", "currencyCode": "RON", "currencySymbol": "lei", "inflationAnnual": 5.8, "savingsRateAnnual": 3.0 },
+    { "id": "TR", "name": "Turkey", "currencyCode": "TRY", "currencySymbol": "₺", "inflationAnnual": 55, "savingsRateAnnual": 17.75 },
+    { "id": "ZA", "name": "South Africa", "currencyCode": "ZAR", "currencySymbol": "R", "inflationAnnual": 5.2, "savingsRateAnnual": 4.0 }
+  ]
+}

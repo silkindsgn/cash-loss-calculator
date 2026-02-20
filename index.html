@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inflation & Cash Loss Calculator — How Much You Lose in 10 Years</title>
+  <meta name="description" content="See how much purchasing power you lose by keeping money in cash. Enter your amount and country — free calculator based on inflation and foregone interest. No sign-up, no product pitch.">
+  <meta name="keywords" content="inflation loss calculator, cost of keeping cash, how much do I lose keeping money in cash, cash purchasing power, money in cash calculator">
+  <link rel="canonical" href="https://silkindsgn.github.io/cash-loss-calculator/">
+  <!-- Open Graph -->
+  <meta property="og:title" content="How much do you lose keeping money in cash?">
+  <meta property="og:description" content="See your estimated loss in 1, 5, and 10 years. Amount + country → one number. No sign-up.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://silkindsgn.github.io/cash-loss-calculator/">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How much you lose keeping money in cash">
+  <meta name="twitter:description" content="Free calculator: amount + country → see your loss in 10 years. No sign-up.">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Cost of cash calculator",
+    "description": "Calculate how much purchasing power you lose by keeping money in cash over 1, 5, and 10 years. Based on inflation and foregone savings interest by country.",
+    "applicationCategory": "FinanceApplication",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+</head>
+<body>
+  <main class="container">
+    <h1 class="headline" id="headline">
+      <span id="headline-with-amount">
+        You are losing <span id="loss-10y" class="result-number" aria-live="polite">—</span><br>in 10 years by keeping<br>your money in cash
+      </span>
+      <span id="headline-empty" class="hidden">Find out how much<br>you lose money<br>saving it in cash</span>
+    </h1>
+    <p class="subheading" id="subheading">It's <span id="loss-1y" class="result-number" aria-live="polite">—</span> in a year and <span id="loss-5y" class="result-number" aria-live="polite">—</span> in 5 years.</p>
+
+    <form id="calculator" class="form" novalidate>
+      <div class="field field-amount">
+        <label for="amount">Amount you keep in cash</label>
+        <input type="number" id="amount" name="amount" min="0" step="100" value="500" placeholder="e.g. 10000">
+      </div>
+      <div class="field field-country">
+        <label for="country">Country you live in</label>
+        <select id="country" name="country">
+          <option value="">Loading…</option>
+        </select>
+      </div>
+    </form>
+
+    <p class="explanation">
+      Calculation based on <a href="https://en.wikipedia.org/wiki/Inflation" target="_blank" rel="noopener noreferrer">average inflation in your country</a><br>and lost simple <a href="https://en.wikipedia.org/wiki/Compound_interest" target="_blank" rel="noopener noreferrer">compound interest</a> opportunities.
+    </p>
+
+    <div class="share-block">
+      <p class="share-text">If this was useful, share the link.</p>
+      <div class="share-buttons">
+        <button type="button" class="share-btn share-copy" id="share-copy" aria-label="Copy link">Copy link</button>
+        <a href="#" class="share-btn share-twitter" id="share-twitter" target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter">Share on Twitter</a>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">For educational use only. No ads. © 2026.</footer>
+  <script src="app.js"></script>
+</body>
+</html>
