@@ -1,47 +1,39 @@
-# Cash-loss calculator (wave-3 v0)
+# Cash-loss calculator
 
-Static single-page calculator: enter an amount and country, see estimated loss in today's money over 1, 5, and 10 years (inflation + foregone savings interest). No sign-up, no product pitch.
+See how much you lose by keeping money in cash—in 1, 5, and 10 years. No sign-up, no product pitch.
 
-## Run locally
+**→ [Use the calculator](https://silkindsgn.github.io/cash-loss-calculator/)**
 
-From this folder, serve the site with a local static server (required for loading `data/countries.json` and for IP geolocation):
+---
 
-```bash
-npx serve
-# or
-python3 -m http.server 8080
-```
+## What it does
 
-Then open the URL (e.g. http://localhost:3000 or http://localhost:8080).
+Enter an amount and your country. The tool shows your **estimated loss in today’s money** over 1, 5, and 10 years—from inflation and from not earning the average savings-account rate. All on one page, no account required.
 
-Opening `index.html` via `file://` may fail to load the country list due to browser security; use a local server for full behaviour.
+## Why it matters
 
-## Deploy to GitHub Pages
+Cash in your pocket or in a non-interest account loses value over time. This calculator makes that cost visible so you can decide what to do with your money. Not advice; for illustration only.
 
-This folder is its own git repo. To push to GitHub and go live:
+## How to use it
 
-```bash
-cd wave-3/cash-loss-calculator
-git push -u origin main
-```
+1. Open **[silkindsgn.github.io/cash-loss-calculator](https://silkindsgn.github.io/cash-loss-calculator/)**
+2. Enter the amount of cash you’re thinking about (e.g. emergency fund, money sitting in a current account).
+3. Select your country (often pre-filled from your location).
+4. Read the estimated loss at 1, 5, and 10 years.
 
-Then in GitHub: **Settings → Pages** → Source: **Deploy from a branch** → Branch: **main** → Folder: **/ (root)** → Save.  
-Site will be at **https://silkindsgn.github.io/cash-loss-calculator/**.
+## How it works
 
-After that, submit `https://silkindsgn.github.io/cash-loss-calculator/sitemap.xml` in [Google Search Console](https://search.google.com/search-console).
+The result is the **opportunity cost** of holding that amount in cash instead of in a savings account at your country’s average rate, in today’s money:
 
-## Data
+- Uses **real data** per country: annual inflation and average savings-account rate (from national statistics, OECD, central banks; see `data/countries.json` for sources).
+- Formula: loss = `(P / (1+i)^n) * ((1+r)^n - 1)` where P = amount, i = inflation, r = savings rate, n = years.
 
-- **data/countries.json**: inflation (annual %) and average savings-account rate (annual %) per country. Sourced from national statistics, OECD, ECB MFI, World Bank (approx 2023–2024). See `_source` in the file.
+*Not financial advice; for illustration only.*
 
-## Formula
+---
 
-Loss in today's money = opportunity cost of holding cash vs saving at the average rate:
+## For contributors / development
 
-`(P / (1+i)^n) * ((1+r)^n - 1)`
-
-- P = amount, i = inflation (decimal), r = savings rate (decimal), n = years.
-
-## Task
-
-Spec: `wave-3/team/pm/2026-02-18-cash-loss-calculator-v0.md`
+- **Run locally:** From this folder, use a static server (e.g. `npx serve` or `python3 -m http.server 8080`). Opening `index.html` via `file://` can block loading `data/countries.json`; use a local server for full behaviour.
+- **Deploy (GitHub Pages):** Push to `main`. In repo **Settings → Pages** → Source: **Deploy from branch** → Branch: **main** → Folder: **/ (root)**. Site: https://silkindsgn.github.io/cash-loss-calculator/
+- **Task spec:** `wave-3/team/pm/2026-02-18-cash-loss-calculator-v0.md`
