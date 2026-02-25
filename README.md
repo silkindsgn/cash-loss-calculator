@@ -23,17 +23,11 @@ Cash in your pocket or in a non-interest account loses value over time. This cal
 
 ## How it works
 
-The result is the **opportunity cost** of holding that amount in cash instead of in a savings account at your country’s average rate, in today’s money:
+The result is **total loss in today’s money**: inflation erosion + opportunity cost of not earning a short-term savings/rate proxy:
 
-- Uses **real data** per country: annual inflation and average savings-account rate (from national statistics, OECD, central banks; see `data/countries.json` for sources).
-- Formula: loss = `(P / (1+i)^n) * ((1+r)^n - 1)` where P = amount, i = inflation, r = savings rate, n = years.
+- Uses **IMF-canonical** country inputs (`data.imf.org`), with a migration model that derives annual inputs from raw endpoints (`end2024`, `end2025`) in `data/countries.json`.
+- Formula: `loss = P * (1 - 1/(1+i)^n) + (P/(1+i)^n) * ((1+r)^n - 1)` where `P` = amount, `i` = annual inflation (decimal), `r` = annual rate (decimal), `n` = years.
+- Derivation target (migration): `inflation = (cpiEnd2025 / cpiEnd2024) - 1`, `rate = (rateEnd2024 + rateEnd2025) / 2`.
 
 *Not financial advice; for illustration only.*
 
----
-
-## For contributors / development
-
-- **Run locally:** From this folder, use a static server (e.g. `npx serve` or `python3 -m http.server 8080`). Opening `index.html` via `file://` can block loading `data/countries.json`; use a local server for full behaviour.
-- **Deploy (GitHub Pages):** Push to `main`. In repo **Settings → Pages** → Source: **Deploy from branch** → Branch: **main** → Folder: **/ (root)**. Site: https://silkindsgn.github.io/cash-loss-calculator/
-- **Task spec:** `wave-3/team/pm/2026-02-18-cash-loss-calculator-v0.md`

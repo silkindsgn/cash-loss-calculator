@@ -1,30 +1,390 @@
 {
-  "_source": "Inflation: national statistics / OECD / World Bank (approx 2023-2024). Savings rate: ECB MFI statistics, national central banks, OECD deposit rates (household deposits, approx 2023-2024).",
+  "source": "IMF data.imf.org",
   "countries": [
-    { "id": "US", "name": "United States", "currencyCode": "USD", "currencySymbol": "$", "inflationAnnual": 2.95, "savingsRateAnnual": 4.5 },
-    { "id": "CA", "name": "Canada", "currencyCode": "CAD", "currencySymbol": "C$", "inflationAnnual": 2.8, "savingsRateAnnual": 2.5 },
-    { "id": "GB", "name": "United Kingdom", "currencyCode": "GBP", "currencySymbol": "£", "inflationAnnual": 3.28, "savingsRateAnnual": 2.05 },
-    { "id": "DE", "name": "Germany", "currencyCode": "EUR", "currencySymbol": "€", "inflationAnnual": 2.26, "savingsRateAnnual": 1.2 },
-    { "id": "FR", "name": "France", "currencyCode": "EUR", "currencySymbol": "€", "inflationAnnual": 2.0, "savingsRateAnnual": 1.0 },
-    { "id": "IT", "name": "Italy", "currencyCode": "EUR", "currencySymbol": "€", "inflationAnnual": 0.98, "savingsRateAnnual": 2.0 },
-    { "id": "ES", "name": "Spain", "currencyCode": "EUR", "currencySymbol": "€", "inflationAnnual": 2.78, "savingsRateAnnual": 1.5 },
-    { "id": "NL", "name": "Netherlands", "currencyCode": "EUR", "currencySymbol": "€", "inflationAnnual": 2.2, "savingsRateAnnual": 1.0 },
-    { "id": "PL", "name": "Poland", "currencyCode": "PLN", "currencySymbol": "zł", "inflationAnnual": 4.2, "savingsRateAnnual": 1.0 },
-    { "id": "BE", "name": "Belgium", "currencyCode": "EUR", "currencySymbol": "€", "inflationAnnual": 2.4, "savingsRateAnnual": 0.8 },
-    { "id": "AT", "name": "Austria", "currencyCode": "EUR", "currencySymbol": "€", "inflationAnnual": 2.3, "savingsRateAnnual": 1.0 },
-    { "id": "AU", "name": "Australia", "currencyCode": "AUD", "currencySymbol": "A$", "inflationAnnual": 3.4, "savingsRateAnnual": 2.75 },
-    { "id": "JP", "name": "Japan", "currencyCode": "JPY", "currencySymbol": "¥", "inflationAnnual": 2.2, "savingsRateAnnual": 0.1 },
-    { "id": "CN", "name": "China", "currencyCode": "CNY", "currencySymbol": "¥", "inflationAnnual": 1.0, "savingsRateAnnual": 1.5 },
-    { "id": "IN", "name": "India", "currencyCode": "INR", "currencySymbol": "₹", "inflationAnnual": 4.8, "savingsRateAnnual": 3.5 },
-    { "id": "BR", "name": "Brazil", "currencyCode": "BRL", "currencySymbol": "R$", "inflationAnnual": 4.5, "savingsRateAnnual": 6.0 },
-    { "id": "MX", "name": "Mexico", "currencyCode": "MXN", "currencySymbol": "$", "inflationAnnual": 4.2, "savingsRateAnnual": 4.5 },
-    { "id": "CH", "name": "Switzerland", "currencyCode": "CHF", "currencySymbol": "CHF", "inflationAnnual": 1.0, "savingsRateAnnual": 0.3 },
-    { "id": "SE", "name": "Sweden", "currencyCode": "SEK", "currencySymbol": "kr", "inflationAnnual": 2.0, "savingsRateAnnual": 0.15 },
-    { "id": "NO", "name": "Norway", "currencyCode": "NOK", "currencySymbol": "kr", "inflationAnnual": 3.2, "savingsRateAnnual": 1.4 },
-    { "id": "PT", "name": "Portugal", "currencyCode": "EUR", "currencySymbol": "€", "inflationAnnual": 2.1, "savingsRateAnnual": 1.2 },
-    { "id": "CZ", "name": "Czech Republic", "currencyCode": "CZK", "currencySymbol": "Kč", "inflationAnnual": 2.0, "savingsRateAnnual": 2.5 },
-    { "id": "RO", "name": "Romania", "currencyCode": "RON", "currencySymbol": "lei", "inflationAnnual": 5.8, "savingsRateAnnual": 3.0 },
-    { "id": "TR", "name": "Turkey", "currencyCode": "TRY", "currencySymbol": "₺", "inflationAnnual": 55, "savingsRateAnnual": 17.75 },
-    { "id": "ZA", "name": "South Africa", "currencyCode": "ZAR", "currencySymbol": "R", "inflationAnnual": 5.2, "savingsRateAnnual": 4.0 }
+    {
+      "id": "US",
+      "name": "United States",
+      "currencyCode": "USD",
+      "currencySymbol": "$",
+      "cpi": {
+        "latest": 149.160191,
+        "latestDate": "2026-M01",
+        "previous": 145.683553,
+        "previousDate": "2025-M01"
+      },
+      "rate": {
+        "value": 3.875,
+        "date": "2025-M10"
+      }
+    },
+    {
+      "id": "CA",
+      "name": "Canada",
+      "currencyCode": "CAD",
+      "currencySymbol": "C$",
+      "cpi": {
+        "latest": 165.0,
+        "latestDate": "2026-M01",
+        "previous": 161.3,
+        "previousDate": "2025-M01"
+      },
+      "rate": {
+        "value": 2.25,
+        "date": "2025-M10"
+      }
+    },
+    {
+      "id": "GB",
+      "name": "United Kingdom",
+      "currencyCode": "GBP",
+      "currencySymbol": "£",
+      "cpi": {
+        "latest": 139.4,
+        "latestDate": "2026-M01",
+        "previous": 135.1,
+        "previousDate": "2025-M01"
+      },
+      "rate": null
+    },
+    {
+      "id": "DE",
+      "name": "Germany",
+      "currencyCode": "EUR",
+      "currencySymbol": "€",
+      "cpi": {
+        "latest": 122.8,
+        "latestDate": "2026-M01",
+        "previous": 120.3,
+        "previousDate": "2025-M01"
+      },
+      "rate": {
+        "value": 3.8,
+        "date": "2023-M12"
+      }
+    },
+    {
+      "id": "FR",
+      "name": "France",
+      "currencyCode": "EUR",
+      "currencySymbol": "€",
+      "cpi": {
+        "latest": 124.43,
+        "latestDate": "2025-M12",
+        "previous": 123.62,
+        "previousDate": "2024-M12"
+      },
+      "rate": {
+        "value": 2.7163,
+        "date": "2025-M05"
+      }
+    },
+    {
+      "id": "IT",
+      "name": "Italy",
+      "currencyCode": "EUR",
+      "currencySymbol": "€",
+      "cpi": {
+        "latest": 124.9,
+        "latestDate": "2025-M12",
+        "previous": 123.4,
+        "previousDate": "2024-M12"
+      },
+      "rate": {
+        "value": 2.792,
+        "date": "2026-M01"
+      }
+    },
+    {
+      "id": "ES",
+      "name": "Spain",
+      "currencyCode": "EUR",
+      "currencySymbol": "€",
+      "cpi": {
+        "latest": 128.28,
+        "latestDate": "2025-M12",
+        "previous": 124.49,
+        "previousDate": "2024-M12"
+      },
+      "rate": {
+        "value": 2.02,
+        "date": "2026-M01"
+      }
+    },
+    {
+      "id": "NL",
+      "name": "Netherlands",
+      "currencyCode": "EUR",
+      "currencySymbol": "€",
+      "cpi": {
+        "latest": 135.27,
+        "latestDate": "2025-M12",
+        "previous": 131.63,
+        "previousDate": "2024-M12"
+      },
+      "rate": {
+        "value": 4.8848,
+        "date": "2025-M05"
+      }
+    },
+    {
+      "id": "PL",
+      "name": "Poland",
+      "currencyCode": "PLN",
+      "currencySymbol": "zł",
+      "cpi": {
+        "latest": 154.7,
+        "latestDate": "2025-M12",
+        "previous": 150.9,
+        "previousDate": "2024-M12"
+      },
+      "rate": {
+        "value": 5.5,
+        "date": "2026-M01"
+      }
+    },
+    {
+      "id": "BE",
+      "name": "Belgium",
+      "currencyCode": "EUR",
+      "currencySymbol": "€",
+      "cpi": {
+        "latest": 136.29,
+        "latestDate": "2025-M12",
+        "previous": 133.54,
+        "previousDate": "2024-M12"
+      },
+      "rate": {
+        "value": 5.0488,
+        "date": "2025-M05"
+      }
+    },
+    {
+      "id": "AT",
+      "name": "Austria",
+      "currencyCode": "EUR",
+      "currencySymbol": "€",
+      "cpi": {
+        "latest": 129.8,
+        "latestDate": "2025-M12",
+        "previous": 125.1,
+        "previousDate": "2024-M12"
+      },
+      "rate": {
+        "value": 3.2861,
+        "date": "2025-M05"
+      }
+    },
+    {
+      "id": "AU",
+      "name": "Australia",
+      "currencyCode": "AUD",
+      "currencySymbol": "A$",
+      "cpi": {
+        "latest": 100.97,
+        "latestDate": "2025-M12",
+        "previous": 97.31,
+        "previousDate": "2024-M12"
+      },
+      "rate": {
+        "value": 3.6,
+        "date": "2025-M10"
+      }
+    },
+    {
+      "id": "JP",
+      "name": "Japan",
+      "currencyCode": "JPY",
+      "currencySymbol": "¥",
+      "cpi": {
+        "latest": 112.9,
+        "latestDate": "2026-M01",
+        "previous": 111.2,
+        "previousDate": "2025-M01"
+      },
+      "rate": {
+        "value": 0.5,
+        "date": "2025-M10"
+      }
+    },
+    {
+      "id": "CN",
+      "name": "China",
+      "currencyCode": "CNY",
+      "currencySymbol": "¥",
+      "cpi": {
+        "latest": 103.8373,
+        "latestDate": "2026-M01",
+        "previous": 103.6,
+        "previousDate": "2025-M01"
+      },
+      "rate": null
+    },
+    {
+      "id": "IN",
+      "name": "India",
+      "currencyCode": "INR",
+      "currencySymbol": "₹",
+      "cpi": {
+        "latest": 198.0,
+        "latestDate": "2025-M12",
+        "previous": 195.4,
+        "previousDate": "2024-M12"
+      },
+      "rate": null
+    },
+    {
+      "id": "BR",
+      "name": "Brazil",
+      "currencyCode": "BRL",
+      "currencySymbol": "R$",
+      "cpi": {
+        "latest": 7427.72,
+        "latestDate": "2026-M01",
+        "previous": 7111.86,
+        "previousDate": "2025-M01"
+      },
+      "rate": {
+        "value": 15.0,
+        "date": "2026-M01"
+      }
+    },
+    {
+      "id": "MX",
+      "name": "Mexico",
+      "currencyCode": "MXN",
+      "currencySymbol": "$",
+      "cpi": {
+        "latest": 143.042,
+        "latestDate": "2025-M12",
+        "previous": 137.949,
+        "previousDate": "2024-M12"
+      },
+      "rate": {
+        "value": 7.16,
+        "date": "2025-M12"
+      }
+    },
+    {
+      "id": "CH",
+      "name": "Switzerland",
+      "currencyCode": "CHF",
+      "currencySymbol": "CHF",
+      "cpi": {
+        "latest": 106.9383,
+        "latestDate": "2025-M12",
+        "previous": 106.8708,
+        "previousDate": "2024-M12"
+      },
+      "rate": null
+    },
+    {
+      "id": "SE",
+      "name": "Sweden",
+      "currencyCode": "SEK",
+      "currencySymbol": "kr",
+      "cpi": {
+        "latest": 417.96,
+        "latestDate": "2025-M12",
+        "previous": 416.71,
+        "previousDate": "2024-M12"
+      },
+      "rate": null
+    },
+    {
+      "id": "NO",
+      "name": "Norway",
+      "currencyCode": "NOK",
+      "currencySymbol": "kr",
+      "cpi": {
+        "latest": 139.1,
+        "latestDate": "2025-M12",
+        "previous": 134.8,
+        "previousDate": "2024-M12"
+      },
+      "rate": {
+        "value": 4.021509,
+        "date": "2025"
+      }
+    },
+    {
+      "id": "PT",
+      "name": "Portugal",
+      "currencyCode": "EUR",
+      "currencySymbol": "€",
+      "cpi": {
+        "latest": 124.843,
+        "latestDate": "2025-M12",
+        "previous": 122.173,
+        "previousDate": "2024-M12"
+      },
+      "rate": {
+        "value": 1.8363,
+        "date": "2025-M05"
+      }
+    },
+    {
+      "id": "CZ",
+      "name": "Czech Republic",
+      "currencyCode": "CZK",
+      "currencySymbol": "Kč",
+      "cpi": {
+        "latest": 155.2,
+        "latestDate": "2025-M12",
+        "previous": 152.0,
+        "previousDate": "2024-M12"
+      },
+      "rate": {
+        "value": 4.647836,
+        "date": "2025-M12"
+      }
+    },
+    {
+      "id": "RO",
+      "name": "Romania",
+      "currencyCode": "RON",
+      "currencySymbol": "lei",
+      "cpi": {
+        "latest": 166.1,
+        "latestDate": "2025-M12",
+        "previous": 152.96,
+        "previousDate": "2024-M12"
+      },
+      "rate": {
+        "value": 5.65,
+        "date": "2025-M12"
+      }
+    },
+    {
+      "id": "TR",
+      "name": "Turkey",
+      "currencyCode": "TRY",
+      "currencySymbol": "₺",
+      "cpi": {
+        "latest": 3513.87,
+        "latestDate": "2025-M12",
+        "previous": 2684.55,
+        "previousDate": "2024-M12"
+      },
+      "rate": {
+        "value": 36.5,
+        "date": "2025-M12"
+      }
+    },
+    {
+      "id": "ZA",
+      "name": "South Africa",
+      "currencyCode": "ZAR",
+      "currencySymbol": "R",
+      "cpi": {
+        "latest": 103.8,
+        "latestDate": "2026-M01",
+        "previous": 100.3,
+        "previousDate": "2025-M01"
+      },
+      "rate": {
+        "value": 6.75,
+        "date": "2026-M01"
+      }
+    }
   ]
 }

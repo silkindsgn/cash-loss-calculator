@@ -53,18 +53,24 @@
     </form>
 
     <p class="explanation">
-      Calculation based on <a href="https://en.wikipedia.org/wiki/Inflation" target="_blank" rel="noopener noreferrer">average inflation in your country</a><br>and lost simple <a href="https://en.wikipedia.org/wiki/Compound_interest" target="_blank" rel="noopener noreferrer">compound interest</a> opportunities.
+      Calculation based on <a href="#" data-popup="how-calculated">average inflation in your country</a><span id="inflation-only-period" class="hidden">.</span><span id="interest-break"><br></span><span id="interest-explanation">and lost simple <a href="#" data-popup="how-calculated">compound interest</a> opportunities.</span>
     </p>
 
-    <div class="share-block">
-      <p class="share-text">If this was useful, share the link.</p>
-      <div class="share-buttons">
-        <button type="button" class="share-btn share-copy" id="share-copy" aria-label="Copy link">Copy link</button>
-        <a href="#" class="share-btn share-twitter" id="share-twitter" target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter">Share on Twitter</a>
+    <div class="popup-overlay hidden" id="popup-overlay" aria-hidden="true">
+      <div class="popup" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+        <button type="button" class="popup-close" id="popup-close" aria-label="Close popup">&times;</button>
+        <div class="popup-content" id="popup-content"></div>
       </div>
     </div>
   </main>
-  <footer class="footer">For educational use only. No ads. © 2026.</footer>
+  <div class="share-block">
+    <p class="share-text">If this was useful, share the link</p>
+    <div class="share-buttons">
+      <button type="button" class="share-btn share-copy" id="share-copy" aria-label="Copy link">Copy link</button>
+      <a href="#" class="share-btn share-twitter" id="share-twitter" target="_blank" rel="noopener noreferrer" aria-label="Share on X">Share on X</a>
+    </div>
+  </div>
+  <footer class="footer">Based on <a href="https://data.imf.org" target="_blank" rel="noopener noreferrer">IMF Data</a>. For educational use only. Not financial advice. © 2026</footer>
   <script src="app.js"></script>
 </body>
 </html>
